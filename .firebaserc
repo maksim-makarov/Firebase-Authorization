@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-authorization-f9ab6": {
+      "hosting": {
+        "Firebase-Authorization": [
+          "fir-authorization-f9ab6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-authorization-f9ab6"
+  }
+}

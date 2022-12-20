@@ -1,0 +1,28 @@
+<form [formGroup]="signupForm" (ngSubmit)="signup()">
+  <p>
+    <input formControlName="signupEmail" type="email" placeholder="Email">
+  </p>
+  <p>
+    <input formControlName="signupPassword" type="password" placeholder="Password">
+  </p>
+  <div *ngIf="signupErrorMessage != ''" style="color:red">
+    <span>{{ signupErrorMessage }}</span>
+  </div>
+
+  <button>Signup</button>
+</form>
+<hr>
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <p>
+    <input formControlName="loginEmail" type="email" placeholder="Email">
+  </p>
+  <p>
+    <input formControlName="loginPassword" type="password" placeholder="Password">
+  </p>
+
+  <div *ngIf="loginErrorMessage != ''" style="color:red">
+    <span>{{ loginErrorMessage }}</span>
+  </div>
+
+  <button>Login</button>
+</form>
